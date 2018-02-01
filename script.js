@@ -5,7 +5,7 @@ window.onload = function(){
 	fixHeader();
 
 	//Scroll to Link inside Site
-	var links = document.getElementsByTagName("A");
+	var links = document.getElementsByTagName("a");
 	for(var i= 0; i<links.length-1;i++){
 		var linkText = links[i].getAttribute("href");
 		if(linkText.substring(0,1) == "#" && linkText != "#" && linkText != "#nav"){
@@ -84,13 +84,12 @@ function scrolltoObj(obj){
 }
 
 //Fixed Header
-
 window.addEventListener("scroll", function(){
 	fixHeader();
 });
 
 function fixHeader(){
-var hoehe = window.pageYOffset;
+	var hoehe = window.pageYOffset;
 	var breite = window.innerWidth;
 	var header = document.getElementById("header");
 	var body = document.getElementsByTagName("body")[0];
