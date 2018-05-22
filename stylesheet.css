@@ -1,4 +1,8 @@
 /*Fonts*/
+
+/*Icons*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 /* source-sans-pro-300 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -38,9 +42,6 @@
        url('fonts/hammersmith-one-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/hammersmith-one-v8-latin-regular.svg#HammersmithOne') format('svg'); /* Legacy iOS */
 }
-
-/*Icons*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
 /* http://meyerweb.com/eric/tools/css/reset/
