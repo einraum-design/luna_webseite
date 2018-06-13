@@ -445,7 +445,10 @@ footer li{
   margin-left:0px;
 }
 
-@media screen and (max-width: 1000px) {
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 750px) {
   #nav{
     width: calc(100% - 30px);
     margin-top: -80px;
@@ -475,7 +478,7 @@ footer li{
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 750px), screen and (max-height: 500px) {
   .box{
   padding-bottom:30px;
 }
@@ -506,7 +509,7 @@ footer li{
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), screen and (max-height: 300px) {
   html, body, div, span, applet, object, iframe,
   h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -535,7 +538,7 @@ footer li{
   }
   .half{
   margin-bottom:15px;
-}
+  }
 
   #header a.logo, a.logo img {
     width: 140px;
