@@ -536,6 +536,9 @@ footer li{
   p, ul{
     padding-bottom: 15px;
   }
+  i{
+  font-size:10px;
+  }
   .half{
   margin-bottom:15px;
   }
