@@ -87,31 +87,35 @@ function scrolltoObj(obj){
 window.addEventListener("scroll", function(){
 	fixHeader();
 });
+window.addEventListener("resize", function(){
+	fixHeader();
+});
 
 function fixHeader(){
-	var hoehe = window.pageYOffset;
+	var hoehe = window.innerHeight;
 	var breite = window.innerWidth;
+	var yPos = window.pageYOffset;
 	var header = document.getElementById("header");
 	var body = document.getElementsByTagName("body")[0];
 
-	if(breite >= 1000){
+	if(breite >= 1000 && hoehe >= 750){
 		body.setAttribute("style", "margin-top: 250px;");
-		if(hoehe < 180){
-			header.setAttribute("style", "position:fixed; top:" + (-hoehe) + "px;");
+		if(yPos < 180){
+			header.setAttribute("style", "position:fixed; top:" + (-yPos) + "px;");
 		}else{
 			header.setAttribute("style", "position:fixed; top:-180px;");
 		}
-	}else if(breite >= 500){
+	}else if(breite >= 500 && hoehe  >= 300){
 		body.setAttribute("style", "margin-top: 200px;");
-		if(hoehe < 55){
-			header.setAttribute("style", "position:fixed; top:" + (-hoehe) + "px;");
+		if(yPos < 55){
+			header.setAttribute("style", "position:fixed; top:" + (-yPos) + "px;");
 		}else{
 			header.setAttribute("style", "position:fixed; top:-55px;");
 		}
 	}else{
 		body.setAttribute("style", "margin-top: 155px;");
-		if(hoehe < 55){
-			header.setAttribute("style", "position:fixed; top:" + (-hoehe) + "px;");
+		if(yPos < 55){
+			header.setAttribute("style", "position:fixed; top:" + (-yPos) + "px;");
 		}else{
 			header.setAttribute("style", "position:fixed; top:-55px;");
 		}
