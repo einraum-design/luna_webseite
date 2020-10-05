@@ -351,13 +351,16 @@ input[type="checkbox"]{
   width:100%;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.3);
 }
-.slideshow a{
+.slide a{
+  line-height: 0px;
+}
+/*.slideshow a{
   position: absolute;
   top:0px;
   width:50%;
   margin: 0 25%;
   height:100%;
-}
+}*/
 .slideNum{
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
